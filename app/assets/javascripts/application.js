@@ -14,3 +14,17 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+// require only the string module from lodash and set to variable.
+var string    = require('lodash/string'),
+    // mock data to be filtered with lodash.
+    userInput = 'déjà vu';
+
+// Use lodash's deburr function to sanatize string.
+sanatizedInput = string.deburr(userInput);
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  // output results to the console.
+  console.log("lodash is working -> " + sanatizedInput);
+
+});
