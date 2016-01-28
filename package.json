@@ -12,8 +12,11 @@
   "author": "brandonrhoward@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "browserify": "^13.0.0",
-    "browserify-incremental": "^3.0.1",
-    "lodash": "^4.0.1"
+    "browserify": "13.0.0",
+    "browserify-incremental": "3.0.1",
+    "lodash": "4.0.1"
+  },
+  "engines": {
+    "node": "5.4.0"
   }
 }
